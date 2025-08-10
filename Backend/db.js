@@ -6,11 +6,11 @@ dotenv.config('./.env');
 
 
 const connectDB = async () => {
-  const Local_url=process.env.MONGO_URL
+  //const Mongo_Local_url=process.env.MONGO_URL_LOCAL
+  const Mongo_Atlas_ulr=process.env.MONGO_URL_ATLAS
   try {
-    const conn = await mongoose.connect(Local_url, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true
+    const conn = await mongoose.connect(Mongo_Atlas_ulr, {
+        
     });
     console.log(`MongoDB Connected: ${conn.connection.host}`);
   } catch (error) {

@@ -49,7 +49,7 @@ function Urls({data}) {
                     onClick={async () => {
                       const URL= API+ 'user/' + item._id;
                       const response =await axios.delete(URL)
-                      console.log("Delete Response:", response.data);
+                     // console.log("Delete Response:", response.data);
                       setUrls(response.data.shortUrls);
                       
                     }}

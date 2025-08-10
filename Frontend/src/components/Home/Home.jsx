@@ -15,10 +15,10 @@ useEffect(() => {
 
               const id= localStorage.getItem('userId') 
               const URL= import.meta.env.VITE_LOCAL_API + "user/" +id;
-              console.log("User ID:",id);
-              console.log("Fetching URLs from:", URL);
               const response= await axios.get(URL);
-              console.log("Response from Home:",response.data.shortUrls);
+              // console.log("User ID:",id);
+              // console.log("Fetching URLs from:", URL);
+              // console.log("Response from Home:",response.data.shortUrls);
               if(response.data.shortUrls )
                     setUrls(response.data.shortUrls);
        };
