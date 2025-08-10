@@ -19,7 +19,7 @@ export default function Sign_in() {
   const onSubmit = async(data) =>{
     try {
         console.log(data);
-        const URL= import.meta.env.VITE_LOCAL_API + 'user/signup'
+        const URL= import.meta.env.VITE_LIVE_API + 'user/signup'
        // console.log("Sign-up URL:", URL);
         const response = await axios.post(URL, data);  
         const token = response.data.Token;

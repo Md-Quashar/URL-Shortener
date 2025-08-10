@@ -18,7 +18,7 @@ export default function Login() {
   const onSubmit = async(data) =>{
     try {
         console.log(data); 
-        const URL= import.meta.env.VITE_LOCAL_API + 'user/login'
+        const URL= import.meta.env.VITE_LIVE_API + 'user/login'
         const response = await axios.post(URL, data);  
        // console.log('User Login successfully:', response.data);
         const token = response.data.Token;

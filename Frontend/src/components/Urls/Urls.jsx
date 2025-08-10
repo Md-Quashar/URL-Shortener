@@ -3,7 +3,7 @@ import './urls.css'
 import axios from 'axios';
 import { useContext } from 'react';
 import { UrlContext } from '../../UrlContext/UrlContext';
-const API=import.meta.env.VITE_LOCAL_API
+const API=import.meta.env.VITE_LIVE_API
 function Urls({data}) {
   //  console.log(API);
   if (!data || data.length === 0) {

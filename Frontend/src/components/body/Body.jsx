@@ -11,7 +11,7 @@ export default function Body() {
   const navigate = useNavigate();
   const onSubmit = async(data) => {
     const token = localStorage.getItem('authToken'); 
-    const URL= import.meta.env.VITE_LOCAL_API + 'createUrls';
+    const URL= import.meta.env.VITE_LIVE_API + 'createUrls';
     // console.log(data);
     // console.log(URL);
     // console.log(token);

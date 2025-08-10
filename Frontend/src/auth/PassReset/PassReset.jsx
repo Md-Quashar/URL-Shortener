@@ -15,7 +15,7 @@ export default function PassReset() {
   const {setUrls} = useContext(UrlContext);
   const onSubmit = async(data) => {
     try {
-      const URL= import.meta.env.VITE_LOCAL_API + 'user/reset-password'
+      const URL= import.meta.env.VITE_LIVE_API + 'user/reset-password'
         //console.log(data);
         //console.log(URL);
         const response = await axios.post(URL, data);  

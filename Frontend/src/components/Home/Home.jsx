@@ -14,7 +14,7 @@ useEffect(() => {
        const getUpdate= async()=>{
 
               const id= localStorage.getItem('userId') 
-              const URL= import.meta.env.VITE_LOCAL_API + "user/" +id;
+              const URL= import.meta.env.VITE_LIVE_API + "user/" +id;
               const response= await axios.get(URL);
               // console.log("User ID:",id);
               // console.log("Fetching URLs from:", URL);
