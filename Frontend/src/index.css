@@ -1,0 +1,32 @@
+
+body {
+  background-color: #535bf2;
+  
+  min-width: 320px;
+  min-height: 100vh;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+a{
+   text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+ a:hover {
+    color: #747bff;
+  }
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
