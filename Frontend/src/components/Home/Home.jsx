@@ -1,7 +1,7 @@
 import React, { useContext,useEffect } from 'react'
 import { UrlContext } from '../../UrlContext/UrlContext.jsx'
 import Header from '../Header/Header.jsx'
-import Body from '../body/body.jsx'
+import Body from '../body/Body.jsx'
 import Urls from '../Urls/Urls.jsx'
 import axios from 'axios'
 
