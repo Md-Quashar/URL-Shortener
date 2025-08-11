@@ -1,4 +1,4 @@
-import "./sign_up.css";
+import "./Sign_up.css";
 import React, { useContext } from "react";
 import { UrlContext } from "../../UrlContext/UrlContext";
 import { useForm } from "react-hook-form";
